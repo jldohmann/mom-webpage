@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <!--  Meta  -->
+  <meta charset="UTF-8" />
+  <title>Laura's Canned Goods</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!--  Styles  -->
+  <link rel="stylesheet" href="styles/index.processed.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- <link rel="stylesheet" href="styles/reset.css"> -->
+  <!-- <link rel="stylesheet" href="styles/debug.css"> -->
+  <!-- <link rel="stylesheet" href="styles/article.css"> -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i,900,900i">
+</head>
+  
+<body>
+    <header id="header">
+      <section class="banner">
+       <h1>Laura's Canned Goods</h1>
+      </section>
+      <nav id="nav-bar">
+        <ul>
+          <img id="header-img" src="https://www.stickpng.com/assets/images/5b4a215cc051e602a568cd7c.png" alt="a leaf">
+          <li><a class="nav-link" href="#shop">Shop</a></li>
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#form">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+  
+    <main>
+      <section id="about">
+       <h2>About Laura:</h2>
+       <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/_x3tR3FJlFo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+       </iframe>
+       <p>
+         Laura's Canned Goods is owned and operated by Laura Boyt in Woodville, Texas. All jams, pickles and other canned items are produced using the freshest ingredients in Laura's garden. Laura has several years experience with growing fruits, vegetables and canning. When you order from Laura's Canned Goods, you support a small town one-woman agricultural business. We appreciate your patronage.
+       </p>
+      </section>
+    
+      <section id="shop">
+       
+        <div id="apricot">
+          <p class="hidden-text"><b>Apricot jam; fresh and tart</b></p>
+        </div>
+      
+        <div id="strawberry-fig">
+          <p class="hidden-text"><b>Strawberry fig jam; not-too-sweet but full of flavor</b></p>
+        </div>
+      
+        <div id="pickles">
+          <p class="hidden-text"><b>Bread and butter pickles; a classic accessory to any burger</b></p>
+        </div>
+      
+      </section>  
+    </main>
+  
+    <footer>
+      <form id="form" action="https://www.freecodecamp.org/email-submit" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="first   last" required><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="example@domain.com" required><br>
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" placeholder="email title"><br>
+        <label for="content">Why are you reaching out today?</label>
+        <textarea rows="5" id="content" name="content" placeholder="message"></textarea><br>
+        <input type="submit" id="submit" value="Send">
+      </form>
+    </footer>
+  
+  <!-- Scripts -->
+    <script src="scripts/index.js"></script>
+</body>
+</html>

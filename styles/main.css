@@ -1,0 +1,199 @@
+:root {
+  font-family: "Bodoni MT", Didot, "Didot LT STD", "Book Antiqua", Garamond, "Times New Roman", serif;
+}
+
+#nav-bar {
+  display: flex;
+  justify-content: space-evenly;
+  position: fixed;
+  top: 0;
+  right: 7px;
+  width: 100%;
+  height: auto;
+  background-color: #c1cd94;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #b4715f;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+  margin: 0 2vw;
+  font-size: 5vh;
+}
+
+#header-img {
+  width: 40px;
+  height: auto;
+  border-radius: 100%;
+}
+
+.banner {
+  background-image: url(https://couchcooperative.org/img/downloads-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 60vh;
+  width: 100%;
+  text-align: center;
+  padding: 20vh 0;
+}
+
+h1 {
+  padding: 20vh;
+  color: #c1cd94;
+  font-size: 12vh;
+}
+
+h2 {
+  margin: 30px 30px;
+  align-self: center;
+}
+
+p {
+  margin: 30px 30px;
+  font-size: 19px;
+}
+
+#about {
+  display: flex;
+  flex-direction: column;
+  background: #c1cd94;
+}
+
+#video {
+  padding: 20px;
+  align-self: center;
+}
+
+#shop {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: #cda094;
+  justify-content: center;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  margin: 40px;
+}
+
+.hidden-text {
+  padding-top: 7em;
+  text-align: center;
+  visibility: hidden;
+}
+
+#apricot {
+  flex: 1;
+  background-image: url(https://assets.bonappetit.com/photos/57d31d9eabffea600db60bcc/master/w_1600%2Cc_limit/canning-jam-step-7.jpg);
+  background-size: cover;
+  background-position: center center;
+  width: 1/3;
+  height: 450px;
+  transition: all .3s ease-in;
+}
+
+#apricot:hover {
+  opacity: 0.5;
+}
+
+#apricot:hover .hidden-text {
+  visibility: visible;
+}
+
+#strawberry-fig {
+  flex: 1;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9A3Q8KkFF37ZZkaNoqxLACHGbzNLo1oiVqlqPb1nLcMkeZIdr&s);
+  background-size: cover;
+  background-position: center center;
+  width: 1/3;
+  height: 450px;
+  transition: all .3s ease-in;
+}
+
+#strawberry-fig:hover {
+  opacity: 0.5;
+}
+
+#strawberry-fig:hover .hidden-text {
+  visibility: visible;
+}
+
+#pickles {
+  flex: 1;
+  background-image: url(https://www.simplyrecipes.com/wp-content/uploads/2010/07/jalapeno-bread-butter-pickles-vertical-a-600.jpg);
+  background-size: cover;
+  background-position: center center;
+  width: 1/3;
+  height: 450px;
+  transition: all .3s ease-in;
+}
+
+#pickles:hover {
+  opacity: 0.6;
+}
+
+#pickles:hover .hidden-text {
+  visibility: visible;
+}
+
+footer {
+  background: #c1cd94;
+}
+
+#form {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+
+#submit {
+  width: 100%;
+  height: 2em;
+  border-radius: 7px;
+  font-size: 20px;
+  grid-column-start: 2;
+  justify-self: start;
+}
+
+@media (max-width: 450px) {
+  h1 {
+    font-size: 5em;
+    padding: 0;
+  }
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  #shop {
+    display: grid;
+  }
+  .hidden-text {
+    padding-top: 15em;
+    visibility: visible;
+    background-image: linear-gradient(120deg, rgb(232,223,223) 0%, rgb(232,223,223));
+    background-repeat: no-repeat;
+    background-size: 100% 4em;
+    background-position: 100% 100%;
+  }
+}
